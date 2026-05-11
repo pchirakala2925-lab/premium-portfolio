@@ -1,0 +1,167 @@
+.certifications{
+  min-height:100vh;
+  padding:120px 5%;
+  background:#020617;
+  color:white;
+}
+
+.certifications h1{
+  font-size:72px;
+  margin-bottom:20px;
+}
+
+.underline{
+  width:90px;
+  height:5px;
+
+  background:
+  linear-gradient(to right,#8b5cf6,#22d3ee);
+
+  border-radius:20px;
+
+  margin-bottom:70px;
+}
+
+/* GRID */
+
+.cert-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+
+.cert-card{
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:28px;
+
+  padding:35px;
+
+  backdrop-filter:blur(20px);
+
+  transition:0.4s;
+}
+
+.cert-card:hover{
+  transform:
+  translateY(-10px);
+
+  box-shadow:
+  0 0 40px rgba(139,92,246,0.35);
+}
+
+.cert-icon{
+  width:70px;
+  height:70px;
+
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+
+  margin-bottom:25px;
+}
+
+/* COLORS */
+
+.blue{
+  background:#082f49;
+  color:#3b82f6;
+}
+
+.yellow{
+  background:#422006;
+  color:#facc15;
+}
+
+.orange{
+  background:#431407;
+  color:#fb923c;
+}
+
+.purple{
+  background:#3b0764;
+  color:#a855f7;
+}
+
+/* BADGES */
+
+.badge{
+  display:inline-block;
+
+  padding:6px 16px;
+
+  border-radius:30px;
+
+  font-size:14px;
+  font-weight:bold;
+
+  margin-bottom:22px;
+}
+
+.blue-badge{
+  background:#082f49;
+  color:#60a5fa;
+}
+
+.yellow-badge{
+  background:#422006;
+  color:#fde047;
+}
+
+.orange-badge{
+  background:#431407;
+  color:#fdba74;
+}
+
+.purple-badge{
+  background:#3b0764;
+  color:#c084fc;
+}
+
+/* TEXT */
+
+.cert-card h2{
+  font-size:30px;
+  margin-bottom:18px;
+  line-height:1.4;
+}
+
+.cert-card p{
+  color:#94a3b8;
+  font-size:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:1200px){
+
+  .cert-grid{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:700px){
+
+  .cert-grid{
+    grid-template-columns:1fr;
+  }
+
+  .certifications h1{
+    font-size:50px;
+  }
+
+}

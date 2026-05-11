@@ -1,0 +1,33 @@
+.cursor{
+  position:fixed;
+
+  width:26px;
+  height:26px;
+
+  border-radius:50%;
+
+  background:
+  radial-gradient(circle,#8b5cf6,#22d3ee);
+
+  pointer-events:none;
+
+  transform:
+  translate(-50%,-50%);
+
+  z-index:999999;
+
+  mix-blend-mode:screen;
+
+  box-shadow:
+  0 0 25px rgba(139,92,246,0.8),
+  0 0 50px rgba(34,211,238,0.5);
+
+  transition:
+  transform 0.08s linear;
+}
+
+/* KEEP NORMAL CURSOR */
+
+body{
+  cursor:auto !important;
+}

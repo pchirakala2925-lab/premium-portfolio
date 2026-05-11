@@ -1,0 +1,196 @@
+.footer{
+  position:relative;
+
+  padding:120px 5% 60px;
+
+  background:#020617;
+
+  color:white;
+
+  overflow:hidden;
+
+  text-align:center;
+}
+
+/* GLOW */
+
+.footer-glow{
+  position:absolute;
+
+  width:500px;
+  height:500px;
+
+  background:#8b5cf6;
+
+  filter:blur(180px);
+
+  opacity:0.15;
+
+  top:-150px;
+  left:50%;
+
+  transform:translateX(-50%);
+}
+
+/* TOP */
+
+.footer-top{
+  position:relative;
+  z-index:2;
+}
+
+.footer-top h1{
+  font-size:70px;
+
+  margin-bottom:20px;
+
+  background:
+  linear-gradient(to right,#8b5cf6,#22d3ee);
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.footer-top p{
+  color:#cbd5e1;
+
+  font-size:24px;
+
+  max-width:700px;
+
+  margin:auto;
+
+  line-height:1.8;
+}
+
+/* STATS */
+
+.github-stats{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+
+  margin-top:70px;
+
+  flex-wrap:wrap;
+
+  position:relative;
+  z-index:2;
+}
+
+.stat-card{
+  width:260px;
+
+  padding:35px;
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:28px;
+
+  backdrop-filter:blur(20px);
+
+  transition:0.4s;
+}
+
+.stat-card:hover{
+  transform:
+  translateY(-10px)
+  scale(1.03);
+
+  box-shadow:
+  0 0 40px rgba(139,92,246,0.4);
+}
+
+.stat-card h2{
+  font-size:52px;
+  color:#22d3ee;
+
+  margin-bottom:10px;
+}
+
+.stat-card span{
+  color:#cbd5e1;
+  font-size:20px;
+}
+
+/* SOCIALS */
+
+.footer-socials{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+
+  margin-top:70px;
+
+  position:relative;
+  z-index:2;
+}
+
+.footer-socials a{
+  width:70px;
+  height:70px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:
+  rgba(255,255,255,0.05);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  color:white;
+
+  font-size:28px;
+
+  transition:0.4s;
+}
+
+.footer-socials a:hover{
+  transform:
+  translateY(-10px)
+  scale(1.1);
+
+  color:#22d3ee;
+
+  box-shadow:
+  0 0 40px rgba(139,92,246,0.5);
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+  margin-top:70px;
+
+  color:#94a3b8;
+
+  font-size:20px;
+
+  position:relative;
+  z-index:2;
+}
+
+.heart{
+  color:#ef4444;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .footer-top h1{
+    font-size:50px;
+  }
+
+  .footer-top p{
+    font-size:20px;
+  }
+
+}

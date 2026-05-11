@@ -1,0 +1,142 @@
+﻿*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+html{
+  overflow-x:hidden;
+}
+
+body{
+  background:#020617;
+  overflow-x:hidden;
+  font-family:Arial, Helvetica, sans-serif;
+  
+  color:white;
+}
+
+/* REMOVE DEFAULT SCROLLBAR */
+::-webkit-scrollbar{
+  width:0px;
+}
+
+/* SELECTION COLOR */
+::selection{
+  background:#8b5cf6;
+  color:white;
+}
+
+/* GLOBAL SECTION SPACING */
+section{
+  position:relative;
+}
+
+/* SMOOTH BUTTON TRANSITIONS */
+button{
+  transition:0.4s ease;
+}
+
+/* LINK RESET */
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* IMAGE RESET */
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* INPUT RESET */
+input,
+textarea,
+button{
+  font-family:inherit;
+}
+
+/* GLASS EFFECT COMMON */
+.glass{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+/* GRADIENT TEXT */
+.gradient-text{
+  background:linear-gradient(
+    to right,
+    #8b5cf6,
+    #22d3ee
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+/* GLOW EFFECT */
+.glow{
+  box-shadow:
+    0 0 40px rgba(139,92,246,0.5);
+}
+
+/* PREMIUM ANIMATION */
+.fade-up{
+  animation:fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+/* FLOATING EFFECT */
+.float{
+  animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+/* BACKGROUND GRID */
+.bg-grid{
+  position:absolute;
+  inset:0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+
+  background-size:80px 80px;
+
+  z-index:0;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+
+  body{
+    cursor:auto;
+  }
+
+}

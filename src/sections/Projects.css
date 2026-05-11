@@ -1,0 +1,118 @@
+.projects{
+  min-height:100vh;
+  background:#020617;
+  color:white;
+  padding:100px 80px;
+}
+
+.projects-title{
+  font-size:70px;
+  margin-bottom:10px;
+}
+
+.projects-line{
+  width:120px;
+  height:5px;
+  background:linear-gradient(to right,#8b5cf6,#22d3ee);
+  border-radius:10px;
+  margin-bottom:30px;
+}
+
+.projects-desc{
+  color:#cbd5e1;
+  max-width:850px;
+  line-height:1.8;
+  font-size:22px;
+  margin-bottom:60px;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.project-card{
+  position:relative;
+  overflow:hidden;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:30px;
+  padding:40px;
+  backdrop-filter:blur(20px);
+}
+
+.project-glow{
+  position:absolute;
+  width:250px;
+  height:250px;
+  background:#7c3aed33;
+  border-radius:50%;
+  top:-80px;
+  right:-80px;
+  filter:blur(50px);
+}
+
+.project-card h2{
+  position:relative;
+  z-index:2;
+  font-size:38px;
+  margin-bottom:25px;
+  background:linear-gradient(to right,#8b5cf6,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.project-card p{
+  position:relative;
+  z-index:2;
+  color:#cbd5e1;
+  line-height:1.9;
+  font-size:20px;
+  margin-bottom:35px;
+}
+
+.project-tech{
+  position:relative;
+  z-index:2;
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-bottom:35px;
+}
+
+.project-tech span{
+  padding:12px 20px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:14px;
+  color:#cbd5e1;
+}
+
+.project-buttons{
+  position:relative;
+  z-index:2;
+  display:flex;
+  gap:20px;
+}
+
+.github-btn{
+  padding:16px 32px;
+  border:none;
+  border-radius:16px;
+  background:#111827;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+}
+
+.live-btn{
+  padding:16px 32px;
+  border:none;
+  border-radius:16px;
+  background:linear-gradient(to right,#7c3aed,#8b5cf6);
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+  box-shadow:0 0 40px rgba(139,92,246,0.5);
+}
