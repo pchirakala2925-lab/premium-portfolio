@@ -257,3 +257,116 @@
   }
 
 }
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+  section{
+    padding-left:20px !important;
+    padding-right:20px !important;
+  }
+
+  /* HERO */
+
+  .hero{
+    padding:130px 20px 80px !important;
+  }
+
+  .hero h1{
+    font-size:64px !important;
+
+    line-height:1.1;
+  }
+
+  .hero h2{
+    font-size:32px !important;
+  }
+
+  .hero-desc{
+    font-size:20px !important;
+
+    line-height:1.7;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+
+    align-items:flex-start;
+  }
+
+  .hero-buttons a{
+    width:100%;
+    justify-content:center;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    padding:20px !important;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .logo{
+    font-size:26px !important;
+  }
+
+  /* ABOUT */
+
+  .about-container{
+    grid-template-columns:1fr !important;
+
+    gap:60px;
+  }
+
+  .about-image{
+    width:100% !important;
+  }
+
+  .about-right h2{
+    font-size:42px !important;
+  }
+
+  /* SKILLS */
+
+  .skills-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  /* PROJECTS */
+
+  .projects-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  /* EXPERIENCE */
+
+  .timeline-item{
+    width:100% !important;
+  }
+
+  /* CERTIFICATIONS */
+
+  .cert-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  /* BEYOND CODE */
+
+  .beyond-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  /* CONTACT */
+
+  .contact-container{
+    grid-template-columns:1fr !important;
+  }
+
+  form{
+    width:100% !important;
+  }
+
+}
